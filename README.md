@@ -1,4 +1,5 @@
 # Germline Variant Calling
-### sequencing data
-### qulity control 
-### variant calling workflows
+### Annotation
+### Sequencing data
+### Qulity control 
+### Variant calling workflows
