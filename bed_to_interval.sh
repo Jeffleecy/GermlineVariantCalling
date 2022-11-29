@@ -1,14 +1,15 @@
-#!/bin/bash
-#PBS -q ngs48G
-#PBS -P MST109178
-#PBS -W group_list=MST109178
-#PBS -N DF_v2_213genes_Interval
-#PBS -o /work1/u1272905/213_gene_readdepth
-#PBS -e /work1/u1272905/213_gene_readdepth
-#PBS -M jocosojeff@gmail.com
-#PBS -m a
+#!/usr/bin/sh
+#SBATCH -A MST109178        # Account name/project number
+#SBATCH -J SAMPLE_NAME         # Job name
+#SBATCH -p ngs48G           # Partition Name 
+#SBATCH -c 14               # Core numbers
+#SBATCH --mem=46g           # Memory size
+#SBATCH -o out.log          # Path to the standard output file 
+#SBATCH -e err.log          # Path to the standard error ouput file
+#SBATCH --mail-user=@gmail.com    # email
+#SBATCH --mail-type=FAIL              # When to send an email = NONE, BEGIN, END, FAIL, REQUEUE, or ALL
 
-FOLDER=/work1/u1272905/213_gene_readdepth
+FOLDER=
 Sample_ID=DF_v2_213genes_Interval
 DATE=20210506
 ### Bed file is from
