@@ -3,7 +3,7 @@ This directory lists scripts for performing germline variant calling from NGS da
 The following describes these tools' functions and characteristics. 
 
 ### Sentieon
-   - SNV/small Indel indentification
-   - improved 
+   - Sentieon_VariantCalling.sh: alignment, variant calling, and bam-to-cram transformation
+   - Sentieon_JointCalling.sh: 
 ## GATK
 
