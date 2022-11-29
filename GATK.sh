@@ -1,12 +1,14 @@
-#!/bin/bash
-#PBS -q ngs48G
-#PBS -P MST109178
-#PBS -W group_list=MST109178
-#PBS -N SAMPLE_ID
-#PBS -o /project/GP1/u3710062/AI_SHARE/shared_scripts/A1_Panel/SAMPLE_ID/SAMPLE_ID_A1_pipeline_out
-#PBS -e /project/GP1/u3710062/AI_SHARE/shared_scripts/A1_Panel/SAMPLE_ID/SAMPLE_ID_A1_pipeline_err
-#PBS -M bobjackal@gmail.com
-#PBS -m a
+#!/usr/bin/sh
+#SBATCH -A MST109178        # Account name/project number
+#SBATCH -J SAMPLE_NAME         # Job name
+#SBATCH -p ngs48G           # Partition Name 
+#SBATCH -c 14               # Core numbers
+#SBATCH --mem=46g           # Memory size
+#SBATCH -o out.log          # Path to the standard output file 
+#SBATCH -e err.log          # Path to the standard error ouput file
+#SBATCH --mail-user=@gmail.com    # email
+#SBATCH --mail-type=FAIL              # When to send an email = NONE, BEGIN, END, FAIL, REQUEUE, or ALL
+
 
 ### Read1 and Read2
 ID=SAMPLE_ID
