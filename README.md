@@ -2,18 +2,30 @@
 
 ## Description 
  This repository includes the codes used in:
-1. an
-
-This directory lists scripts for performing germline variant calling from NGS data (targeted panel/whole-exome/whole-genome).
-The following describes these tools' functions and characteristics. 
+1. performing germline variant calling from next-generation seuqencing (NGS) data (targeted panel/whole-exome/whole-genome)
+2. performing joint calling for variants detected
 
 ## Dependencies
-These codes are based on Python 3.10 and shell scripts and are executed in the Linux environment.
- 
+These codes are based on shell scripts and are executed in the Linux environment.
  
 ## Scripts
-#### ANNOVAR_hg19.sh
-   - Input: a VCF file of interest
-   - Function: annotate the VCF file using ANNOVAR based on the hg19 reference genome
-   - Output: a tab-delimited file recording information on the variants investigated
-   
+#### DRAGEN_VariantCaling.sh
+   - Input: fastq files from NGS data (targeted panel/whole-exome/whole-genome)
+   - Function: reads alignmemnt, position sorting, duplicate marking, and variant calling
+   - Output: g.VCF or VCF files
+
+#### DRAGEN_JointCalling.sh
+   - Input: g.VCF files
+   - Function: jointly genotype variant information in multiple g.VCF files
+   - Output: VCF files
+
+#### GATK_VariantCalling.sh
+
+#### Sentieon_VariantCalling.sh
+   - Input: fastq files from NGS data (targeted panel/whole-exome/whole-genome)
+   - Function: reads alignmemnt, var
+   - Output: g.vcf files
+
+#### Sentieon_JointCalling.sh
+
+
