@@ -2,7 +2,7 @@
 
 ## Description 
  This repository includes the codes used in:
-1. performing germline variant calling from next-generation seuqencing (NGS) data (targeted panel/whole-exome/whole-genome)using [Illumina DRAGEN software](https://sapac.illumina.com/products/by-type/informatics-products/dragen-bio-it-platform.html), [GATK Germline short variant discovery pipelins](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-), or [Sentieon DNASeq Variant Calling Workflow](https://www.sentieon.com)
+1. performing germline variant calling from next-generation seuqencing (NGS) data (targeted panel/whole-exome/whole-genome)using [Illumina DRAGEN software](https://sapac.illumina.com/products/by-type/informatics-products/dragen-bio-it-platform.html), [GATK Germline short variant discovery pipelines](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-), or [Sentieon DNASeq Variant Calling Workflow](https://www.sentieon.com)
 2. performing joint calling for variants detected
 
 ## Dependencies
